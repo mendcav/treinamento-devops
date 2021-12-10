@@ -1,15 +1,9 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "sa-east-1"
 }
 
 module "criar_instancia_da_erika" {
-  source = "./erika"
-  nome = "Um nome"
-  tipo = "large"
-}
-
-module "criar_instancia_da_erika_micro" {
-  source = "./erika"
-  nome = "Um nome"
-  tipo = "micro"
+  source = "git@github.com:mendcav/modulo_devops_terraform_mendcav.git"
+  nome = "mendcav-terraform-modulo"
+  tipo = "t2.nano"
 }
