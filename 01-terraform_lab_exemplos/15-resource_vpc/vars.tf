@@ -29,7 +29,7 @@ variable "name_id" {
   }
 }
 
-variable ssh_pub_key {
+variable "ssh_pub_key" {
   type        = string
   description = "chave publica ssh"
 }

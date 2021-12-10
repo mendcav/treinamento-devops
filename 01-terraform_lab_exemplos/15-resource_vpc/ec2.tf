@@ -3,7 +3,7 @@
 
 resource "aws_instance" "web2" {
   subnet_id                   = aws_subnet.my_subnet_a.id
-  ami                         = aws_ami.ubuntu.id
+  ami                         = data.aws_ami.ubuntu.id
   instance_type               = var.instance_type
   key_name                    = aws_key_pair.chave_key_mendcav.key_name
   associate_public_ip_address = true
@@ -29,7 +29,7 @@ output "public_ip_dns" {
     <<EOF
      Public IP : ${web.public_ip} 
      Public DNS: ${web.public_dns}
-     ssh -i /home/ubuntu/cert-turma3-mendcav-dev.pem ubuntu@${web.public_ip}
+     ssh -i id_rsa ubuntu@${web.public_ip}
     EOF
   ]
 }
