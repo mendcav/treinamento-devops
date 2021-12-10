@@ -1,0 +1,6 @@
+#image_id    = "ami-0e66f5495b4efdd0f"
+instance_type = "t2.micro"
+name_id     = "ec2-terraform-mendcav"
+qtde        = "1"
+#sg_id       = "sg-05ef2a719830699e9"
+#subnet_id   = "subnet-0be7a57595540e840"

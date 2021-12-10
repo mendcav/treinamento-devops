@@ -16,7 +16,7 @@
 docker build -t didox/app-imersao-docker-nodejs -f Dockerfile .
 
 ## Build Docker and run
-docker run -d -p 80:3000 --name app-imersao-docker-nodejs didox/app-imersao-docker-nodejs
+docker run -d -p 80:8080 --name java-app-deploy-academia-devops mendcav/java-app-deploy-academia-devops
 
 ## Build watch Docker
 docker run -it -p 80:3000 --name app-imersao-docker-nodejs didox/app-imersao-docker-nodejs
